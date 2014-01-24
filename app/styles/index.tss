@@ -1,0 +1,105 @@
+".container": {
+	backgroundColor:"white"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#222",
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#table": {
+	top:65,
+	height:Titanium.UI.SIZE,
+	scrollable:false
+},
+"#toolbar": {
+	backgroundColor: "#222222",
+	height:65,
+	top:0,
+	zIndex: 99
+},
+"#edit": { 
+	bottom:0,
+	color: "#FFFFFF",
+	height: 45,
+	right:10,
+	font: {
+		fontSize: 18,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: 'bold'
+	}
+},
+"TableViewRow": {
+	editable:true,
+	selectedBackgroundColor: "#FFFFFF"
+},
+".productItem": {
+	height:Titanium.UI.SIZE
+},
+".productItemContainer": {
+	bottom:10,
+	left:70,
+	layout:"vertical",
+	height:Titanium.UI.SIZE,
+	top:10,
+	width:180
+},
+".productImage":{
+	left:10,
+	top:10,
+	width:50
+},
+".productTitle":{
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: 'bold'
+	},
+	left:0
+},
+".productSku": {
+	left:0
+},
+".productInventory": {
+	left:0
+},
+".productPrice": {
+	left:0
+},
+".productActions": {
+	bottom:10,
+	layout:"horizontal",
+	height:Titanium.UI.SIZE,
+	top:10
+}
+".productList": {
+	color:"#3399CC",
+	left:0,
+	width:130
+},
+".productRemove": {
+	color:"#3399CC",
+},
+".productQty": {
+	value:1,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	keyboardType:Titanium.UI.KEYBOARD_NUMBER_PAD,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color:"#222222",
+	clearOnEdit:true,
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	},
+	top:40,
+	right:10,
+	width:50,
+	height:35
+},
+".productQtyToolbar": {
+	style: Ti.UI.iPhone.SystemButtonStyle.DONE
+}
