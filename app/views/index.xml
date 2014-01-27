@@ -1,59 +1,10 @@
 <Alloy>
 	<Window class="container">
-		<View id="toolbar">
-			<Label id="edit" text="Edit" />
+		<View id="body">
+			<View id="toolbar">
+				<Label id="edit" text="Edit" />
+			</View>
+			<WebView id="webview" url="/html/cart.html" top="65" disableBounce="true" />
 		</View>
-		<TableView id="table">
-        	<TableViewRow>
-        		<View class="productItem">
-					<ImageView class="productImage" image="http://www.backcountry.com/images/items/medium/PAT/PAT3184/GRANV.jpg" />
-					<View class="productItemContainer">
-						<Label text="Patagonia Ultralight Down Shirt - Men's" class="productTitle" />
-						<Label text="Purple, L – PAT3184-PU-L" class="productSku" />
-						<Label text="Inventory available: 10" class="productInventory" />
-						<Label text="$133.16" class="productPrice" />
-						<View class="productActions">
-							<Label text="Move to Wish List" class="productList" />
-							<Label text="Remove" class="productRemove" />
-						</View>
-					</View>
-					<TextField class="productQty">
-						<KeyboardToolbar>
-							<Toolbar>
-								<Items>
-									<FlexSpace/>
-					        		<Button class="productQtyToolbar">Done</Button>
-						    	</Items>
-							</Toolbar>
-					    </KeyboardToolbar>
-					</TextField>
-				</View>
-        	</TableViewRow> 
-        	<TableViewRow>
-        		<View class="productItem">
-					<ImageView class="productImage" image="http://www.backcountry.com/images/items/medium/PAT/PAT3184/GRANV.jpg" />
-					<View class="productItemContainer">
-						<Label text="Patagonia Ultralight Down Shirt - Men's" class="productTitle" />
-						<Label text="Purple, L – PAT3184-PU-L" class="productSku" />
-						<Label text="Inventory available: 10" class="productInventory" />
-						<Label text="$133.16" class="productPrice" />
-						<View class="productActions">
-							<Label text="Move to Wish List" class="productList" />
-							<Label text="Remove" class="productRemove" />
-						</View>
-					</View>
-					<TextField class="productQty">
-						<KeyboardToolbar>
-							<Toolbar>
-								<Items>
-									<FlexSpace/>
-					        		<Button class="productQtyToolbar">Done</Button>
-						    	</Items>
-							</Toolbar>
-					    </KeyboardToolbar>
-					</TextField>
-				</View>
-        	</TableViewRow>
-        </TableView>
 	</Window>
 </Alloy>

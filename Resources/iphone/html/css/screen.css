@@ -1,0 +1,50 @@
+@font-face { 
+	font-family: 'Conduit'; src: url("../../fonts/ConduitITCStd-Light.otf") format("truetype"); 
+	font-weight: 200; 
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'Conduit'; src: url("../../fonts/ConduitITCStd-Regular.otf") format("truetype"); 
+	font-weight: 400; 
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'Conduit'; src: url("../../fonts/ConduitITCStd-Bold.otf") format("truetype"); 
+	font-weight: 600; 
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'Conduit'; src: url("../../fonts/ConduitITCStd-ExtraBold.otf") format("truetype"); 
+	font-weight: 800; 
+	font-style: normal;
+}
+
+* { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+html { background:#ededed; font-size:20px; }
+body { background:#ededed; color:#222; font: 400 100%/24px "Conduit", Helvetica, Arial, Sans-Serif; -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5 { font-weight:600; }
+
+h1 { font-size: 1.125rem; text-transform:uppercase; }
+h2 { font-size: 1.000rem; }
+h3 { font-size: 0.875rem; }
+h4 { font-size: 0.750rem; }
+h5 { font-size: 0.625rem; }
+
+article { padding:10px; }
+
+
+input[type="checkbox"] { position: absolute; margin-left:10px; }
+input[type="checkbox"]:after { background:#fff; content:""; box-shadow:0 0 1px rgba(0,0,0,0.3); display:inline-block; width:54px; margin:-2px 0 0 -10px; height:34px; -webkit-border-radius:18px; -webkit-transition:all 0.2s ease; }
+input[type="checkbox"]:before { background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.2); content:""; display:inline-block; height:30px; margin:0 0 0 -8px; position:absolute; -webkit-border-radius:18px; width:30px; -webkit-transition:all 0.2s ease; }
+input[type="checkbox"]:checked:after { background:#39C; content:""; display:inline-block; width:54px; height:34px; -webkit-border-radius:18px; }
+input[type="checkbox"]:checked:before { background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0.2); content:""; display:inline-block; height:30px; margin:0 0 0 12px; position:absolute; -webkit-border-radius:18px; width:30px; }
+
+
+
+
+
