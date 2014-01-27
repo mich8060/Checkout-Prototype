@@ -10,16 +10,12 @@ function Controller() {
             if (element.indexOf("#")) return null;
             type = "id";
         } else type = "class";
-        cl = element.replace(".", "").replace("#", "");
+        element = element.replace(".", "").replace("#", "");
         for (var key in views) {
             var obj = views[key];
-            for (var prop in obj) if ("class" == type && "classname" == prop && obj[prop] == cl) {
-                Ti.API.info("Object: " + obj);
-                Ti.API.info("ID: " + obj.id);
-                obj.addEventListener(callback, function() {
-                    this.applyProperties(options);
-                });
-            }
+            for (var prop in obj) "class" == type && "classname" == prop && obj[prop] == element && obj.addEventListener(callback, function() {
+                this.applyProperties(options);
+            });
         }
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));

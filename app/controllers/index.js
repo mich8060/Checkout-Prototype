@@ -27,7 +27,7 @@ function zNode(element, callback, options){
 	}else{
 		return null;
 	}
-	cl = element.replace('.','').replace('#','');
+	element = element.replace('.','').replace('#','');
 	
 	// Parse through Titanium Object
 	for(var key in views) {
@@ -35,9 +35,7 @@ function zNode(element, callback, options){
 	   	for (var prop in obj) {
 			if(type == "class"){
 				if(prop == "classname"){
-					if(obj[prop] == cl){
-						Ti.API.info("Object: " + obj);
-						Ti.API.info("ID: " + obj.id);
+					if(obj[prop] == element){
 						obj.addEventListener(callback, function(){
 							this.applyProperties(options);
 						});
