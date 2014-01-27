@@ -50,7 +50,6 @@
 					<Label id="creditsTotal" text="Credits Total: $100.00" />
 					<Switch id="creditsSwitch" value="true" />
 				</View>
-				<Label text="Test Me" id="testBtn" backgroundColor="#3399CC" color="#FFFFFF" width="300" height="45" />
 			</ScrollView>
 		</View>
 	</Window>

@@ -1,23 +1,4 @@
 function Controller() {
-    function zNode(element, callback, options) {
-        var document = $;
-        var views = document.__views;
-        var type = null;
-        var options = options || {};
-        var callback = callback || null;
-        if (!element) return null;
-        if (element.indexOf(".")) {
-            if (element.indexOf("#")) return null;
-            type = "id";
-        } else type = "class";
-        element = element.replace(".", "").replace("#", "");
-        for (var key in views) {
-            var obj = views[key];
-            for (var prop in obj) "class" == type && "classname" == prop && obj[prop] == element && obj.addEventListener(callback, function() {
-                this.applyProperties(options);
-            });
-        }
-    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -391,32 +372,11 @@ function Controller() {
         id: "creditsSwitch"
     });
     $.__views.credits.add($.__views.creditsSwitch);
-    $.__views.testBtn = Ti.UI.createLabel({
-        width: "300",
-        height: "45",
-        color: "#FFFFFF",
-        font: {
-            fontSize: 16,
-            fontFamily: "ConduitITCStd"
-        },
-        textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
-        text: "Test Me",
-        id: "testBtn",
-        backgroundColor: "#3399CC"
-    });
-    $.__views.content.add($.__views.testBtn);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.edit.addEventListener("click", function() {
         $.cartTable.editing = !$.table.editing;
     }, false);
-    $.testBtn.addEventListener("click", function() {
-        $.__alloyId0.text = "It works!";
-    });
-    zNode(".test", "click", {
-        text: "Hello World",
-        color: "#FF0000"
-    });
     $.index.open();
     _.extend($, exports);
 }

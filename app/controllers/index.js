@@ -2,16 +2,6 @@ $.edit.addEventListener('click',function(){
 	$.cartTable.editing = !$.table.editing;	
 }, false);
 
-
-
-function expand(data) {
-	Ti.API.info("The data object contains: " + JSON.stringify(data));
-}
-
-$.testBtn.addEventListener('click',function(){
-	$.__alloyId0.text = "It works!";
-});
-
 function zNode(element, callback, options){
 	var document = $;
 	var views = document.__views;
@@ -52,9 +42,5 @@ zNode(".test", "click", {
 	color: "#FF0000"
 });
 
-//expand(obj);
-//Ti.API.info(prop + " = " + obj[prop]);
-
-//Ti.API.info(typeof(obj.__views));
 
 $.index.open();
