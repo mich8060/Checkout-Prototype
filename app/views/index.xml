@@ -4,7 +4,54 @@
 			<View id="toolbar">
 				<Label id="edit" text="Edit" />
 			</View>
-			<WebView id="webview" url="/html/cart.html" top="65" disableBounce="true" />
+			<ScrollView id="content">
+				<View id="titleBar">
+					<Label class="title" text="CART" classname="test" />
+					<View id="subtotalContainer">
+						<Label id="subtotalLabel" text="Subtotal:" classname="test" />
+						<Label id="subtotal" text="$218.95" classname="ducks" />
+					</View>
+				</View>
+				<TableView id="productTable">
+					<TableViewRow class="productRow">
+						<View class="product">
+							<ImageView class="productImage" image="http://www.backcountry.com/images/items/medium/ARC/ARC1189/THABL.jpg" />
+							<TextField id="proudctQty">
+								<KeyboardToolbar>
+					                <Toolbar>
+					                    <Items>
+					                        <FlexSpace/>
+					                        <Button style="Ti.UI.iPhone.SystemButtonStyle.DONE">Done</Button>
+					                    </Items>
+					                </Toolbar>
+					            </KeyboardToolbar>
+							</TextField>
+							<View class="productDetails">
+								<Label class="productTitle" text="Arc'teryx Atom LT Hooded Insulated Jacket - Men's" />
+								<Label class="productSku" text="Thalo Blue, L - ARC1189-THABL-L" />
+								<Label class="productInventory" text="Inventory available:11" />
+								<Label class="productPrice" text="$218.95" />
+								<View class="productActions">
+									<Label class="productList" text="Move to Wish List" />
+									<Label class="productRemove" text="Remove" />
+								</View>
+							</View>
+						</View>
+					</TableViewRow>
+					<TableViewRow hasChild="true">
+						<View class="wishlist">
+							<Label class="wishlistLabel" text="Wish List" />
+							<Label class="wishlistNumber" text="2" />
+						</View>
+					</TableViewRow>
+				</TableView>
+				<View id="credits">
+					<Label id="creditsQuestion" text="Use credits on this order?" />
+					<Label id="creditsTotal" text="Credits Total: $100.00" />
+					<Switch id="creditsSwitch" value="true" />
+				</View>
+				<Label text="Test Me" id="testBtn" backgroundColor="#3399CC" color="#FFFFFF" width="300" height="45" />
+			</ScrollView>
 		</View>
 	</Window>
 </Alloy>

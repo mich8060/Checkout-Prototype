@@ -29,4 +29,185 @@
 		fontSize: 18,
 		fontFamily: 'ConduitITCStd'
 	}
+},
+"#content": {
+	backgroundColor:"#ededed",
+	top: 65,
+	height: Ti.UI.FILL,
+	layout:"vertical"
+},
+"#titleBar":{
+	height:Ti.UI.SIZE,
+},
+".title": {
+	font: {
+		fontSize: 22,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	},
+	top: 15,
+	left:10
+},
+"#subtotalContainer": {
+	top:20,
+	right:10,
+	layout:"horizontal",
+	height:Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+"#subtotalLabel": {
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	}	
+},
+"#subtotal":{
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	}	
 }
+"TableViewRow": {
+	selectedBackgroundColor:"#FFFFFF",
+	height: Ti.UI.SIZE
+},
+"#productTable": {
+	height: Ti.UI.SIZE,
+	top:10,
+	scrollable: false
+},
+".productRow": {
+	editable: true
+}
+".product": {
+	height: Ti.UI.SIZE
+},
+".productImage": {
+	top:15,
+	left:10,
+	width:50
+},
+".productDetails": {
+	left:70,
+	top:15,
+	bottom:10,
+	right:60,
+	height: Ti.UI.SIZE,
+	layout:"vertical"
+},
+".productTitle":{
+	font: {
+		fontSize: 18,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	},
+	bottom:3,
+	left:0
+},
+".productSku":{
+	left:0,
+	color:"#666666",
+},
+".productInventory":{
+	left:0,
+	color:"#666666",
+},
+".productPrice":{
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	},
+	left:0,
+	top:5
+},
+".productActions":{
+	left:0,
+	layout:"horizontal",
+	height: Ti.UI.SIZE,
+	top:10,
+	bottom:5
+},
+".productList":{
+	left:0,
+	color:"#3399cc",
+	width:130
+},
+".productRemove":{
+	color:"#3399cc"
+},
+"#proudctQty": {
+	right:10,
+	value:1,
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color:"#222222",
+	top:40,
+	height:35,
+	width:40,
+	font: {
+		fontSize: 20,
+		fontFamily: 'ConduitITCStd'
+	},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	clearOnEdit: true,
+	keyboardType: Titanium.UI.KEYBOARD_DECIMAL_PAD
+},
+".wishlist": {
+	top:10,
+	bottom:12,
+	height: Ti.UI.SIZE,
+	layout:"horizontal"
+},
+".wishlistLabel": {
+	font: {
+		fontSize: 20,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	},
+	left:20,
+},
+".wishlistNumber":{
+	backgroundColor:"#e48325",
+	color:"#ffffff",
+	font: {
+		fontSize: 12,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	},
+	left:5,
+	width:12,
+	height:12,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
+},
+"#credits":{
+	height:50,
+	backgroundColor:"#FFFFFF",
+	top:10,
+	bottom:10,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER	
+},
+"#creditsQuestion":{
+	left:10,
+	top:11,
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	}	
+},
+"#creditsTotal":{
+	left:10,
+	bottom:10,
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	}
+},
+"#creditsSwitch":{
+	onTintColor:"#3399cc",
+	right:10
+},
