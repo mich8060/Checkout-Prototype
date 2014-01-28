@@ -1,0 +1,71 @@
+"ScrollView": {
+	color: "#222",
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	},
+	height: Ti.UI.FILL,
+	layout: "vertical"
+}
+"View": {
+	color: "#222",
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	},
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+},
+"ItemTemplate": {
+	selectedBackgroundColor:"#FFFFFF",
+	height: Ti.UI.SIZE
+},
+"TableView": {
+	bottom:10, 
+	top:10, 
+	selectedBackgroundColor:"#FFFFFF",
+	color: "#222",
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	},
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+},
+"TableViewRow": {
+	font: {
+		fontSize: 20,
+		fontFamily: 'ConduitITCStd'
+	},
+	height: Ti.UI.SIZE
+},
+"Label": {
+	font: {
+		fontSize: 16,
+		fontFamily: 'ConduitITCStd'
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"Button": {
+	backgroundColor:"#e48325",
+	color:"#FFFFFF",
+	font: {
+		fontSize: 20,
+		fontFamily: 'ConduitITCStd',
+		fontWeight: "Bold"
+	},
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	left:10,
+	right:10,
+	top:10,
+	bottom:10,
+	height: 45,
+},
+".padding": {
+	top:10,
+	bottom:10,
+	left:10,
+	right:10
+}
+

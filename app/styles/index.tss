@@ -1,213 +1,57 @@
-".container": {
-	backgroundColor:"white"
-},
-"#body": {
-	backgroundColor:"#ededed"
-}
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#222",
-	font: {
-		fontSize: 16,
-		fontFamily: 'ConduitITCStd'
-	},
-	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
-},
-"#toolbar": {
-	backgroundColor: "#222222",
-	height:65,
-	top:0,
-	zIndex: 99
-},
-"#edit": { 
-	bottom:0,
-	color: "#FFFFFF",
-	height: 45,
-	right:10,
-	font: {
-		fontSize: 18,
-		fontFamily: 'ConduitITCStd'
-	}
-},
-"#content": {
-	backgroundColor:"#ededed",
-	top: 65,
-	height: Ti.UI.FILL,
-	layout:"vertical"
-},
-"#titleBar":{
-	height:Ti.UI.SIZE,
-},
-".title": {
-	font: {
-		fontSize: 22,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	},
-	top: 15,
-	left:10
-},
-"#subtotalContainer": {
-	top:20,
-	right:10,
-	layout:"horizontal",
-	height:Ti.UI.SIZE,
-	width: Ti.UI.SIZE
-},
-"#subtotalLabel": {
-	font: {
-		fontSize: 16,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	}	
-},
-"#subtotal":{
-	font: {
-		fontSize: 16,
-		fontFamily: 'ConduitITCStd'
-	}	
-}
-"TableViewRow": {
-	selectedBackgroundColor:"#FFFFFF",
-	height: Ti.UI.SIZE
-},
-"#productTable": {
-	height: Ti.UI.SIZE,
-	top:10,
-	scrollable: false
-},
-".productRow": {
-	editable: true
-}
-".product": {
-	height: Ti.UI.SIZE
-},
-".productImage": {
-	top:15,
-	left:10,
-	width:50
-},
-".productDetails": {
-	left:70,
-	top:15,
-	bottom:10,
-	right:60,
-	height: Ti.UI.SIZE,
-	layout:"vertical"
-},
-".productTitle":{
-	font: {
-		fontSize: 18,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	},
-	bottom:3,
-	left:0
-},
-".productSku":{
-	left:0,
-	color:"#666666",
-},
-".productInventory":{
-	left:0,
-	color:"#666666",
-},
-".productPrice":{
-	font: {
-		fontSize: 16,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	},
-	left:0,
-	top:5
-},
-".productActions":{
-	left:0,
-	layout:"horizontal",
-	height: Ti.UI.SIZE,
-	top:10,
-	bottom:5
-},
-".productList":{
-	left:0,
-	color:"#3399cc",
-	width:130
-},
-".productRemove":{
-	color:"#3399cc"
-},
-"#proudctQty": {
-	right:10,
-	value:1,
-	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
-	color:"#222222",
-	top:40,
-	height:35,
-	width:40,
-	font: {
-		fontSize: 20,
-		fontFamily: 'ConduitITCStd'
-	},
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
-	clearOnEdit: true,
-	keyboardType: Titanium.UI.KEYBOARD_DECIMAL_PAD
-},
-".wishlist": {
-	top:10,
-	bottom:12,
-	height: Ti.UI.SIZE,
-	layout:"horizontal"
-},
-".wishlistLabel": {
-	font: {
-		fontSize: 20,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	},
-	left:20,
-},
-".wishlistNumber":{
-	backgroundColor:"#e48325",
-	color:"#ffffff",
-	font: {
-		fontSize: 12,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	},
-	left:5,
-	width:12,
-	height:12,
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
-},
-"#credits":{
-	height:50,
-	backgroundColor:"#FFFFFF",
-	top:10,
-	bottom:10,
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
-	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER	
-},
-"#creditsQuestion":{
-	left:10,
-	top:11,
-	font: {
-		fontSize: 16,
-		fontFamily: 'ConduitITCStd',
-		fontWeight: "Bold"
-	}	
-},
-"#creditsTotal":{
-	left:10,
-	bottom:10,
-	font: {
-		fontSize: 16,
-		fontFamily: 'ConduitITCStd'
-	}
-},
-"#creditsSwitch":{
-	onTintColor:"#3399cc",
-	right:10
-},
+".container": { backgroundColor:"#ededed" },
+
+/* Toolbar Component Styles */
+"#toolbar": { backgroundColor: "#222222", height:65, layout:"composite", top:0, zIndex: 99 },
+	"#edit": {  bottom:0, color: "#FFFFFF", height: 45, right:10, font: { fontSize: 18, fontFamily: 'ConduitITCStd' }},
+	
+/* Titlebar Component Styles */
+"#titleBar":{ layout:"composite" },
+	".title": { font: { fontSize: 22, fontFamily: 'ConduitITCStd', fontWeight: "Bold" }, top: 15, left:10 },
+	
+/* Subtotal Component Styles */	
+"#subtotalContainer": { top:20, right:10, layout:"horizontal", textAlign:Titanium.UI.TEXT_ALIGNMENT_RIGHT, width:Ti.UI.SIZE },
+	"#subtotalLabel": { font: { fontSize: 16, fontFamily: 'ConduitITCStd', fontWeight: "Bold" }},
+	"#subtotal":{ font: { fontSize: 16, fontFamily: 'ConduitITCStd' }}
+
+/* Product Tableview Component Styles */	
+"#productTable": { scrollable: false },
+	".productRow": { editable: true, selectedBackgroundColor:"#FFFFFFc", separatorStyle:"none" },
+	".product": { layout:"composite" },
+	".productImage": { top:15, left:10, width:50 },
+	".productDetails": { left:70, top:15, bottom:10, right:60, layout:"vertical" },
+	".productTitle":{ font: { fontSize: 18, fontFamily: 'ConduitITCStd', fontWeight: "Bold" }, bottom:3, left:0 },
+	".productSku":{ left:0, color:"#666666", },
+	".productInventory":{ left:0, color:"#666666", },
+	".productPrice":{ font: { fontSize: 16, fontFamily: 'ConduitITCStd', fontWeight: "Bold" }, left:0, top:5 },
+	".productActions":{ left:0, layout:"horizontal", top:10, bottom:5 },
+	".productList":{ left:0, color:"#3399cc", width:130 },
+	".productRemove":{ color:"#3399cc" },
+	".proudctQty": { right:10, value:1, borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED, color:"#222222", top:40, height:35, width:40, font: { fontSize: 18, fontFamily: 'ConduitITCStd' }, textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER, verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER, clearOnEdit: true, returnKeyType:Titanium.UI.RETURNKEY_DONE, keyboardType: Titanium.UI.KEYBOARD_NUMBERS_PUNCTUATION },
+
+/* Shipping Compnent Styles */
+"#shipping": {  },
+	".shippingOption": { selectedBackgroundColor:"#add6eb", height: 45 },
+	".shippingSelection": { width:18, height:18, left:10 },
+	".shipLeft": { font: { fontSize: 16, fontFamily: 'ConduitITCStd' }, left:35 },
+	".shipRight": { font: { fontSize: 16, fontFamily: 'ConduitITCStd' }, right:10 },
+
+/* Credits Component Styles */
+"#credits":{ height:50, backgroundColor:"#FFFFFF", bottom:10, textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER, verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER, layout:"composite" },
+	"#creditsQuestion":{ left:10, top:11, font: { fontSize: 16, fontFamily: 'ConduitITCStd', fontWeight: "Bold" } },
+	"#creditsTotal":{ left:10, bottom:10, font: { fontSize: 16, fontFamily: 'ConduitITCStd' } },
+	"#creditsSwitch":{ onTintColor:"#3399cc", right:10 },
+	
+/* Subtotals Component Styles */
+"#subtotals": { backgroundColor:"#FFFFFF" },
+	".subtotalsList": { layout:"horizontal" },
+	".subLeft": { left:0, top:4, bottom:4 },
+	".subRight": { right:0, top:4, bottom:4 },
+	".subLeftBold": { left:0, top:4, bottom:4, font: { fontSize: 18, fontFamily: 'ConduitITCStd', fontWeight: "Bold" } },
+	".subRightBold": { right:0, top:4, bottom:4, font: { fontSize: 18, fontFamily: 'ConduitITCStd', fontWeight: "Bold" } },
+	
+/* Express Component Styles */
+".expressMessage": { font: { fontSize: 14, fontFamily: 'ConduitITCStd' } }
+	".expressBtn": { font: { fontSize: 16, fontFamily: 'ConduitITCStd', fontWeight: "Bold" } }
+
+/* Customer Service Component Styles */
+".customerService": { }

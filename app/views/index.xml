@@ -16,7 +16,7 @@
 					<TableViewRow class="productRow">
 						<View class="product">
 							<ImageView class="productImage" image="http://www.backcountry.com/images/items/medium/ARC/ARC1189/THABL.jpg" />
-							<TextField id="proudctQty">
+							<TextField class="proudctQty">
 								<KeyboardToolbar>
 					                <Toolbar>
 					                    <Items>
@@ -38,17 +38,73 @@
 							</View>
 						</View>
 					</TableViewRow>
-					<TableViewRow hasChild="true">
-						<View class="wishlist">
-							<Label class="wishlistLabel" text="Wish List" />
-							<Label class="wishlistNumber" text="2" />
-						</View>
+				</TableView>
+				<View>
+					<ImageView class="wishlistImage" image="/images/wishtlist.jpg" />
+				</View>
+				<TableView id="shipping">
+					<TableViewRow class="shippingOption" id="shipOne">
+						<ImageView class="shippingSelection" image="/images/selected.png" id="checkOne" />
+						<Label class="shipLeft" text="Economy - 3 to 10 Days" />
+						<Label class="shipRight" text="FREE!" color="#3399CC" />
+					</TableViewRow>
+					<TableViewRow class="shippingOption" id="shipTwo">
+						<ImageView class="shippingSelection" image="/images/unselected.png" id="checkTwo" />
+						<Label class="shipLeft" text="Standard - 3 to 5 Days" />
+						<Label class="shipRight" text="$12.95" />
+					</TableViewRow>
+					<TableViewRow class="shippingOption" id="shipThree">
+						<ImageView class="shippingSelection" image="/images/unselected.png" id="checkThree" />
+						<Label class="shipLeft" text="Two Business Days" />
+						<Label class="shipRight" text="$19.95" />
+					</TableViewRow>
+					<TableViewRow class="shippingOption" id="shipFour">
+						<ImageView class="shippingSelection" image="/images/unselected.png" id="checkFour" />
+						<Label class="shipLeft" text="Next Business Days" />
+						<Label class="shipRight" text="$29.95" />
 					</TableViewRow>
 				</TableView>
 				<View id="credits">
 					<Label id="creditsQuestion" text="Use credits on this order?" />
 					<Label id="creditsTotal" text="Credits Total: $100.00" />
 					<Switch id="creditsSwitch" value="true" />
+				</View>
+				<View id="subtotals">
+					<View class="padding">
+						<Label class="subLeftBold" text="Your Order" />
+						<View backgroundColor="#c2c2c2" height="1" top="4" bottom="10" />
+						<View class="subtotalsList">
+							<View width="50%">
+								<Label class="subLeft" text="Subtotal" />
+								<Label class="subLeft"  text="Shipping" />
+								<Label class="subLeft"  text="Tax" />
+							</View>
+							<View width="50%">
+								<Label class="subRight" text="$218.95" />
+								<Label class="subRight" text="FREE!" />
+								<Label class="subRight" text="Calculated at checkout" />
+							</View>
+							<View backgroundColor="#222222" height="2" top="4" bottom="10" width="100%" />
+							<View width="50%">
+								<Label class="subLeftBold"  text="Total" />
+							</View>
+							<View width="50%">
+								<Label class="subRightBold"  text="$218.95" />
+							</View>
+						</View>
+					</View>
+				</View>
+				<TableView id="ExpressCheckout">
+	                <TableViewRow>
+						<View class="padding">
+							<Label class="expressMessage" text="Express checkout is the easiest way to pay for your gear. Simply enter your password, and your done." />
+						</View>
+					</TableViewRow>
+			        <TableViewRow title="Express Checkout" hasChild="true" class="expressBtn" />
+		        </TableView>
+				<Button title="Proceed with Order" />
+				<View>
+					<ImageView class="customerService" image="/images/cs.png" />
 				</View>
 			</ScrollView>
 		</View>

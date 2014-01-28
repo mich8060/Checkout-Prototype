@@ -17,8 +17,8 @@ function Controller() {
     $.__views.widget = Ti.UI.createLabel({
         color: "#000",
         font: {
-            fontSize: 18,
-            fontWeight: "bold"
+            fontSize: 16,
+            fontFamily: "ConduitITCStd"
         },
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
