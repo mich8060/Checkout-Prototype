@@ -14,8 +14,8 @@
 	"#subtotal":{ font: { fontSize: 16, fontFamily: 'ConduitITCStd' }}
 
 /* Product Tableview Component Styles */	
-"#productTable": { scrollable: false },
-	".productRow": { editable: true, selectedBackgroundColor:"#FFFFFFc", separatorStyle:"none" },
+"#productTable": { scrollable:false },
+	".productRow": { editable:true, selectedBackgroundColor:"#FFFFFF", separatorStyle:"none" },
 	".product": { layout:"composite" },
 	".productImage": { top:15, left:10, width:50 },
 	".productDetails": { left:70, top:15, bottom:10, right:60, layout:"vertical" },

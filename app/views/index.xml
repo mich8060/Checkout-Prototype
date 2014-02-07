@@ -72,23 +72,21 @@
 				<View id="subtotals">
 					<View class="padding">
 						<Label class="subLeftBold" text="Your Order" />
-						<View backgroundColor="#c2c2c2" height="1" top="4" bottom="10" />
 						<View class="subtotalsList">
-							<View width="50%">
+							<View class="subtotalBlocks">
 								<Label class="subLeft" text="Subtotal" />
 								<Label class="subLeft"  text="Shipping" />
 								<Label class="subLeft"  text="Tax" />
 							</View>
-							<View width="50%">
+							<View class="subtotalBlocks">
 								<Label class="subRight" text="$218.95" />
 								<Label class="subRight" text="FREE!" />
 								<Label class="subRight" text="Calculated at checkout" />
 							</View>
-							<View backgroundColor="#222222" height="2" top="4" bottom="10" width="100%" />
-							<View width="50%">
+							<View class="subtotalBlocks">
 								<Label class="subLeftBold"  text="Total" />
 							</View>
-							<View width="50%">
+							<View class="subtotalBlocks">
 								<Label class="subRightBold"  text="$218.95" />
 							</View>
 						</View>
